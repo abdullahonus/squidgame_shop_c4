@@ -11,13 +11,16 @@ class StartShopingPage extends StatefulWidget {
 class _StartShopingPageState extends State<StartShopingPage> {
   @override
   Widget build(BuildContext context) {
+    double sizeHeight = MediaQuery.of(context).size.height;
+    double sizeWidth = MediaQuery.of(context).size.width;
+
     return SafeArea(child: LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
         return Stack(
           children: [
             Container(
-              width: double.infinity,
-              height: double.infinity,
+              height: sizeHeight * 1,
+              width: sizeWidth * 1,
               decoration: const BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage("assets/screen.jpg"),
@@ -28,8 +31,8 @@ class _StartShopingPageState extends State<StartShopingPage> {
               left: 15,
               right: 15,
               child: Container(
-                width: 350,
-                height: 250,
+                height: sizeHeight * 0.3,
+                width: sizeWidth * 1,
                 decoration: BoxDecoration(
                     color: Colors.grey.withOpacity(0.6),
                     borderRadius: const BorderRadius.all(Radius.circular(20))),
@@ -37,8 +40,8 @@ class _StartShopingPageState extends State<StartShopingPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
-                      width: 250,
-                      height: 100,
+                      height: sizeHeight * 0.1,
+                      width: sizeWidth * 0.6,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage("assets/textSG.png"))),
@@ -59,16 +62,16 @@ class _StartShopingPageState extends State<StartShopingPage> {
                       onPressed: () {
                         debugPrint("Butona Basıldı");
                         Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => ShopPage(),
+                          builder: (context) => const ShopPage(),
                         ));
                       },
                       child: const Text("Shop Now"),
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.pink[400],
+                        primary: Colors.pink[700],
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.0),
                         ),
-                        minimumSize: const Size(250, 50),
+                        minimumSize: Size(sizeHeight * 0.1, sizeWidth * 0.1),
                         textStyle: const TextStyle(
                             fontSize: 35, fontWeight: FontWeight.bold),
                       ),
