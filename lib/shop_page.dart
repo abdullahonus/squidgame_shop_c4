@@ -22,7 +22,8 @@ class _ShopPageState extends State<ShopPage> {
               width: sizeWidth * 1,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage("assets/wpp.png"), fit: BoxFit.cover)),
+                      image: AssetImage("assets/screen.jpg"),
+                      fit: BoxFit.cover)),
             ),
             Container(
               height: sizeHeight * 0.1,
@@ -73,8 +74,13 @@ class _ShopPageState extends State<ShopPage> {
                 ],
               ),
             ),
-            Column(
-              children: const [],
+            Positioned(
+              left: 15,
+              child: Container(
+                height: sizeHeight * 0.5,
+                width: sizeWidth * 0.8,
+                decoration: BoxDecoration(color: Colors.grey.withOpacity(0.5)),
+              ),
             )
           ],
         );

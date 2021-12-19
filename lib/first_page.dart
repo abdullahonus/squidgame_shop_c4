@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:squidgame_shop_c4/shop_page.dart';
 
@@ -23,8 +24,41 @@ class _StartShopingPageState extends State<StartShopingPage> {
               width: sizeWidth * 1,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage("assets/screen.jpg"),
-                      fit: BoxFit.cover)),
+                      image: AssetImage("assets/wpp.png"), fit: BoxFit.cover)),
+            ),
+            Positioned(
+              left: 15,
+              right: 15,
+              top: 350,
+              child: Container(
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.pink.shade700),
+                    color: Colors.white.withOpacity(0.6),
+                    borderRadius: BorderRadius.circular(15)),
+                child: SizedBox(
+                  width: 250.0,
+                  child: Center(
+                    child: DefaultTextStyle(
+                      style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30.0,
+                          color: Colors.black),
+                      child: AnimatedTextKit(
+                        displayFullTextOnTap: true,
+                        isRepeatingAnimation: false,
+                        pause: const Duration(milliseconds: 1500),
+                        animatedTexts: [
+                          TypewriterAnimatedText('    '),
+                          TypewriterAnimatedText('Welcome Gamer'),
+                          TypewriterAnimatedText('Do you need Money?'),
+                          TypewriterAnimatedText('Lets Play a Game!!'),
+                        ],
+                        onTap: () {},
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             ),
             Positioned(
               bottom: 40,
@@ -34,6 +68,7 @@ class _StartShopingPageState extends State<StartShopingPage> {
                 height: sizeHeight * 0.3,
                 width: sizeWidth * 1,
                 decoration: BoxDecoration(
+                    border: Border.all(color: Colors.pink.shade700),
                     color: Colors.grey.withOpacity(0.6),
                     borderRadius: const BorderRadius.all(Radius.circular(20))),
                 child: Column(
@@ -62,7 +97,7 @@ class _StartShopingPageState extends State<StartShopingPage> {
                       onPressed: () {
                         debugPrint("Butona Basıldı");
                         Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const ShopPage(),
+                          builder: (context) => ShopPage(),
                         ));
                       },
                       child: const Text("Shop Now"),
