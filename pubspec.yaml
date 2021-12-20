@@ -60,20 +60,46 @@ flutter:
   assets:
      
      - screen.jpg
-     - Ali199.webp
-     - baby.jpg
-     - black.jpg
-     - GiHun456.webp
-     - llNam001.webp
-     - SaeByeok067.webp
-     - sangWoo218.webp
-     - screen.jpg
-     - screen2.jpg
+     - Ali199.png
+     - baby.png
+     - black.png
+     - GiHun256.png
+     - llNam001.png
+     - SaeByeok067.png
+     - sangWoo218.png
+     - screen.jpg    
      - storeText.png
-     - textSG.png
-     - wp.png
+     - textSG.png 
      - wpp.png
-     
+     - pink.png
+     - 001.png
+     - 218.png
+     - 218s.png
+     - 456.png
+     - 456s.png
+     - allguard.png
+     - bs.png    
+     - etek.png
+     - guard.png 
+     - guard2.png
+     - guard3.png
+     - guard4.png
+     - masks.png
+     - reda.png
+     - redb.png
+     - cup1.png
+     - cup2.jpg
+     - cup3.jpg
+     - cup4.jpg
+     - cup5.jpg 
+     - cup6.jpg
+     - cup7.jpg
+     - cup8.jpg
+     - cup9.jpg
+     - cup10.jpg
+     - cup10s.jpg
+     - cup11.jpg
+     - cup12.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -87,10 +113,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  #fonts:
-  #    - family: baloo
-  #      fonts:
-  #        - asset: Baloo2-VeriableFont_wght.ttf
+  fonts:
+      - family: bold
+        fonts:
+          - asset: assets/bold.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

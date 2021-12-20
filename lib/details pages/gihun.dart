@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class AliPage extends StatelessWidget {
-  const AliPage({Key? key}) : super(key: key);
+class GiHunPage extends StatelessWidget {
+  const GiHunPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +66,7 @@ class AliPage extends StatelessWidget {
                     width: sizeWidth * 0.9,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("assets/Ali199.png"))),
+                            image: AssetImage("assets/GiHun256.png"))),
                   )),
               Positioned(
                 bottom: 10,
@@ -82,7 +82,7 @@ class AliPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       const Text(
-                        "Ali Toy-199",
+                        "Gi Hun Toy-256",
                         style: TextStyle(
                             fontFamily: "bold",
                             fontSize: 40,
@@ -210,7 +210,7 @@ class AliPage extends StatelessWidget {
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontFamily: "bold",
-                                      
+                                    
                                       fontSize: 17,
                                       color: Colors.black,
                                       decoration: TextDecoration.none,

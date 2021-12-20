@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class AliPage extends StatelessWidget {
-  const AliPage({Key? key}) : super(key: key);
+class BlackPage extends StatelessWidget {
+  const BlackPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +49,7 @@ class AliPage extends StatelessWidget {
                   height: sizeHeight * 0.6,
                   width: sizeWidth * 0.5,
                   decoration: BoxDecoration(
-                    color: Colors.pink.withOpacity(0.4),
+                    color: Colors.black.withOpacity(0.4),
                     borderRadius: BorderRadius.only(
                         bottomRight: Radius.circular(25),
                         bottomLeft: Radius.circular(0),
@@ -66,7 +66,7 @@ class AliPage extends StatelessWidget {
                     width: sizeWidth * 0.9,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("assets/Ali199.png"))),
+                            image: AssetImage("assets/black.png"))),
                   )),
               Positioned(
                 bottom: 10,
@@ -82,7 +82,7 @@ class AliPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       const Text(
-                        "Ali Toy-199",
+                        "Black Soldier",
                         style: TextStyle(
                             fontFamily: "bold",
                             fontSize: 40,
@@ -91,7 +91,7 @@ class AliPage extends StatelessWidget {
                             fontWeight: FontWeight.bold),
                       ),
                       Text(
-                        "\$79.9",
+                        "\$119.9",
                         style: TextStyle(
                             fontFamily: "bold",
                             fontSize: 30,
@@ -177,7 +177,7 @@ class AliPage extends StatelessWidget {
                             width: 10,
                           ),
                           Text(
-                            "4.5",
+                            "5.0",
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontFamily: "bold",
@@ -210,7 +210,7 @@ class AliPage extends StatelessWidget {
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontFamily: "bold",
-                                      
+                                     
                                       fontSize: 17,
                                       color: Colors.black,
                                       decoration: TextDecoration.none,

@@ -14,7 +14,10 @@ class _StartShopingPageState extends State<StartShopingPage> {
   Widget build(BuildContext context) {
     double sizeHeight = MediaQuery.of(context).size.height;
     double sizeWidth = MediaQuery.of(context).size.width;
-
+////////////////////////////////////////////
+  ///follor For more ig: @Countrol4offical
+  ///@countrolfour@gmail.com
+////////////////////////////////////////////
     return SafeArea(child: LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
         return Stack(
@@ -40,6 +43,7 @@ class _StartShopingPageState extends State<StartShopingPage> {
                   child: Center(
                     child: DefaultTextStyle(
                       style: const TextStyle(
+                          fontFamily: "bold",
                           fontWeight: FontWeight.bold,
                           fontSize: 30.0,
                           color: Colors.black),
@@ -50,7 +54,7 @@ class _StartShopingPageState extends State<StartShopingPage> {
                         animatedTexts: [
                           TypewriterAnimatedText('    '),
                           TypewriterAnimatedText('Welcome Gamer'),
-                          TypewriterAnimatedText('Do you need Money?'),
+                          TypewriterAnimatedText('Do you need Money'),
                           TypewriterAnimatedText('Lets Play a Game!!'),
                         ],
                         onTap: () {},
@@ -86,7 +90,7 @@ class _StartShopingPageState extends State<StartShopingPage> {
                       child: Text(
                         "Shope your favorite toys and outfits of the SquideGame on the gol.",
                         style: TextStyle(
-                          fontSize: 14,
+                          fontSize: 17,
                           color: Colors.white,
                           decoration: TextDecoration.none,
                         ),
