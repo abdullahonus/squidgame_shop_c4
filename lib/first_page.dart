@@ -15,7 +15,7 @@ class _StartShopingPageState extends State<StartShopingPage> {
     double sizeHeight = MediaQuery.of(context).size.height;
     double sizeWidth = MediaQuery.of(context).size.width;
 ////////////////////////////////////////////
-  ///follor For more ig: @Countrol4offical
+  ///follow For more ig: @Countrol4offical
   ///@countrolfour@gmail.com
 ////////////////////////////////////////////
     return SafeArea(child: LayoutBuilder(
